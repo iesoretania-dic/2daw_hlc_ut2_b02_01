@@ -34,7 +34,7 @@ class Libro
     private $titulo;
 
     /**
-     * @ORM\ManyToMany(targetEntity="Autor")
+     * @ORM\ManyToMany(targetEntity="Autor", inversedBy="libros")
      * @var Autor[]|Collection
      */
     private $autores;
